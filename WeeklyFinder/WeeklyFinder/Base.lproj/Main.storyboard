@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WeeklyFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekly Finder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dez-OM-AXb">
+                                <rect key="frame" x="0.0" y="185" width="414" height="52"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYz-DY-Dzc">
+                                <rect key="frame" x="20" y="303.5" width="49" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Month" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jMy-Gn-uMU">
+                                <rect key="frame" x="20" y="345.5" width="49" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQf-h1-0r5">
+                                <rect key="frame" x="20" y="387.5" width="49" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gcg-sb-son">
+                                <rect key="frame" x="77" y="297" width="317" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="textFieldChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="p01-5U-R1e"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pwK-Tk-bIj">
+                                <rect key="frame" x="77" y="339" width="317" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="textFieldChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="mcC-VD-nWX"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dfQ-s3-ZVE">
+                                <rect key="frame" x="77" y="381" width="317" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="textFieldChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="5Wy-EW-pVg"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here you will see the day of the week" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPs-ia-Z6H">
+                                <rect key="frame" x="117" y="455" width="180" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="6N4-0h-HOR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gcg-sb-son" firstAttribute="top" secondItem="Dez-OM-AXb" secondAttribute="bottom" constant="60" id="0Mb-aT-Cb7"/>
+                            <constraint firstItem="pwK-Tk-bIj" firstAttribute="leading" secondItem="gcg-sb-son" secondAttribute="leading" id="7Zj-Dc-Wjc"/>
+                            <constraint firstItem="oYz-DY-Dzc" firstAttribute="centerY" secondItem="gcg-sb-son" secondAttribute="centerY" id="93b-7y-SJd"/>
+                            <constraint firstItem="dfQ-s3-ZVE" firstAttribute="leading" secondItem="KQf-h1-0r5" secondAttribute="trailing" constant="8" symbolic="YES" id="DYj-ec-g6F"/>
+                            <constraint firstItem="KQf-h1-0r5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="GvS-Yt-oB7"/>
+                            <constraint firstItem="dfQ-s3-ZVE" firstAttribute="leading" secondItem="gcg-sb-son" secondAttribute="leading" id="MLg-Rz-y4y"/>
+                            <constraint firstItem="Dez-OM-AXb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="OFe-BY-H7t"/>
+                            <constraint firstItem="dfQ-s3-ZVE" firstAttribute="top" secondItem="pwK-Tk-bIj" secondAttribute="bottom" constant="8" symbolic="YES" id="TD0-N2-tSL"/>
+                            <constraint firstItem="jMy-Gn-uMU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="UWg-ty-uOJ"/>
+                            <constraint firstItem="Dez-OM-AXb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ztg-aQ-p0c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dfQ-s3-ZVE" secondAttribute="trailing" constant="20" id="ZyB-zx-ffd"/>
+                            <constraint firstItem="gcg-sb-son" firstAttribute="leading" secondItem="oYz-DY-Dzc" secondAttribute="trailing" constant="8" symbolic="YES" id="cFM-k7-h6B"/>
+                            <constraint firstItem="pwK-Tk-bIj" firstAttribute="top" secondItem="gcg-sb-son" secondAttribute="bottom" constant="8" symbolic="YES" id="gKj-dY-EqR"/>
+                            <constraint firstItem="VPs-ia-Z6H" firstAttribute="top" secondItem="dfQ-s3-ZVE" secondAttribute="bottom" constant="40" id="ghQ-d8-ffz"/>
+                            <constraint firstItem="VPs-ia-Z6H" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jRX-bd-0C0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gcg-sb-son" secondAttribute="trailing" constant="20" id="lXQ-1Z-3uo"/>
+                            <constraint firstItem="Dez-OM-AXb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="137" id="mQx-gU-2nC"/>
+                            <constraint firstItem="pwK-Tk-bIj" firstAttribute="leading" secondItem="jMy-Gn-uMU" secondAttribute="trailing" constant="8" symbolic="YES" id="n2R-EG-Eak"/>
+                            <constraint firstItem="KQf-h1-0r5" firstAttribute="centerY" secondItem="dfQ-s3-ZVE" secondAttribute="centerY" id="qMM-JG-7tp"/>
+                            <constraint firstItem="pwK-Tk-bIj" firstAttribute="centerY" secondItem="jMy-Gn-uMU" secondAttribute="centerY" id="qdq-J9-LCR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pwK-Tk-bIj" secondAttribute="trailing" constant="20" id="t2m-Jh-Ev8"/>
+                            <constraint firstItem="oYz-DY-Dzc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="tx2-aP-vTl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dateTF" destination="gcg-sb-son" id="pBt-6R-8Pb"/>
+                        <outlet property="monthTF" destination="pwK-Tk-bIj" id="GyT-H1-E9O"/>
+                        <outlet property="resultLabel" destination="VPs-ia-Z6H" id="U9Q-6X-X4Q"/>
+                        <outlet property="yearTF" destination="dfQ-s3-ZVE" id="Dkq-Sj-mxC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="66.964285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
